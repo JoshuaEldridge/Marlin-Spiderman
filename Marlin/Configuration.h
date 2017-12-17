@@ -357,11 +357,11 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 	
 	// TEVO Tarantula Custom PID Settings - E3D Clone Hotend
-	// PETG: M303 E0 S245 C10
-	#define  DEFAULT_Kp 19.77
-	#define  DEFAULT_Ki 1.76
-	#define  DEFAULT_Kd 55.47 
-  
+	// PETG: M303 E0 S225 C10
+	#define  DEFAULT_Kp 42.30
+	#define  DEFAULT_Ki 6.62
+	#define  DEFAULT_Kd 67.58 
+
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
   //#define  DEFAULT_Ki 1.08
@@ -391,7 +391,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -405,11 +405,11 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-	// TEVO Tarantula Custom PID Settings - Heatbed with borosilicate glass
-	#define  DEFAULT_bedKp 450.06
-	#define  DEFAULT_bedKi  63.88
-	#define  DEFAULT_bedKd 792.67
-
+	// TEVO Tarantula Custom PID Settings - Heatbed with tempered glass
+  #define  DEFAULT_bedKp 200.29
+  #define  DEFAULT_bedKi 39.43
+  #define  DEFAULT_bedKd 254.32
+  
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
   //#define  DEFAULT_bedKp 10.00
