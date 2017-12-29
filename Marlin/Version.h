@@ -37,7 +37,6 @@
    */
   #define SHORT_BUILD_VERSION "1.1.8"
 
-
   /**
    * Verbose version identifier which should contain a reference to the location
    * from where the binary was downloaded or the source code was compiled.
@@ -50,7 +49,6 @@
    * version was tagged.
    */
   #define STRING_DISTRIBUTION_DATE "2017-12-25 12:00"
-
 
   /**
    * Required minimum Configuration.h and Configuration_adv.h file versions.
